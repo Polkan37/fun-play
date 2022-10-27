@@ -1,0 +1,26 @@
+.hero {
+    text-align: left;
+    color: $text-color;
+
+    &__title {
+        margin: 0;
+        font-family: $header-font;
+        font-size: $font-size-h1;
+    }
+    &__subtitle {
+        padding: 35px 0;
+        font-size: $font-size-subtitle;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    &__button {
+        display: inline-block;
+        background-color: $marking-text-color;
+        color: $text-color;
+        text-transform: uppercase;
+        padding: 21px 48px;
+        border-radius: 20px;
+        font-family: $header-font;
+        font-size: $font-size-button;
+    }
+}

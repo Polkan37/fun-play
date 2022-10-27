@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+
+
+// colors
+$base-color: #c6538c;
+
+$main-color: rgb(29, 71, 89);
+$text-color: #ffffff;
+$marking-text-color: #19ca6d;
+$marking-text-color-hover: #14a95b;
+$marking-text-color-2: #f9ba38;
+$marking-text-color-2-hover: #f3a22e;
+
+// fonts
+$main-font: 'Nunito', sans-serif;
+$header-font: 'Fredoka One', cursive;
+
+// font sizes
+$font-size-basic: 18px;
+$font-size-h1: 56px; 
+$font-size-h2: 40px; 
+$font-size-h3: 28px; 
+$font-size-h4: 22px; 
+$font-size-subtitle: 20px; 
+$font-size-button: 15.4px; 
+
+
+$background-image-header: url(../img/5febb2b5a4f8480023a75f39.png);
+$background-image-about: url();
+$background-image-topGames: url();
+$background-image-timeFlies: url();
+$background-image-newGames: url();
+$background-image-ourJorney: url();
+$background-image-commingSoon: url();
+$background-image-available: url();
+$background-image-ourTeam: url();
+$background-image-popularGames: url();
+$background-image-: url();
+$background-image-subscribe: url();
+$background-image-footer: url();
+
+@mixin background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
