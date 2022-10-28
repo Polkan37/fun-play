@@ -31,14 +31,11 @@ body {
     max-width: 1200px;
     background-color: rgba($color: darksalmon, $alpha: .7);//delete after end
     margin: 0 auto;
-    text-align: center;
 }
 section {
     padding: 100px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .button {
     background-color: $marking-text-color;
@@ -48,17 +45,20 @@ section {
     border-radius: 20px;
     font-family: $header-font;
     font-size: $font-size-button;
+    width: fit-content;
 }
 .dots {
     font-family: $header-font;
     font-weight: bold;
     font-size: $font-size-h2;
     color: $marking-text-color-2;
+    text-align: center;
 }
 .title {
     font-family: $header-font;
     font-size: $font-size-h2;
     color: $text-color;
+    text-align: center;
 }
 @media (min-width: $small-desktop-width) {
     section {

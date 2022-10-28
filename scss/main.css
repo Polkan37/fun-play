@@ -39,15 +39,12 @@ body {
   max-width: 1200px;
   background-color: rgba(233, 150, 122, 0.7);
   margin: 0 auto;
-  text-align: center;
 }
 
 section {
   padding: 100px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .button {
@@ -58,6 +55,9 @@ section {
   border-radius: 20px;
   font-family: "Fredoka One", cursive;
   font-size: 15.4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .dots {
@@ -65,12 +65,14 @@ section {
   font-weight: bold;
   font-size: 40px;
   color: #f9ba38;
+  text-align: center;
 }
 
 .title {
   font-family: "Fredoka One", cursive;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
