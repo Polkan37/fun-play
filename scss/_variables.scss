@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
 
+$tab-width: 768px;
+$small-desktop-width: 992px;
+$desktop-width: 1186px;
+
 
 // colors
 $base-color: #c6538c;
 
-$main-color: rgb(29, 71, 89);
+$background-color: rgb(29, 71, 89);
+$card-wrapper-color: rgb(14, 49, 84);
+$card-button-color: #45a0e4;
 $text-color: #ffffff;
 $marking-text-color: #19ca6d;
 $marking-text-color-hover: #14a95b;
@@ -17,8 +23,12 @@ $header-font: 'Fredoka One', cursive;
 
 // font sizes
 $font-size-basic: 18px;
+$font-size-text: 16px;
+$font-size-h1-desktop: 76px; 
+$font-size-h1-tab: 66px; 
 $font-size-h1: 56px; 
 $font-size-h2: 40px; 
+$font-size-h2-desctop: 60px; 
 $font-size-h3: 28px; 
 $font-size-h4: 22px; 
 $font-size-subtitle: 20px; 
@@ -26,8 +36,8 @@ $font-size-button: 15.4px;
 
 
 $background-image-header: url(../img/5febb2b5a4f8480023a75f39.png);
-$background-image-about: url();
-$background-image-topGames: url();
+$background-image-about: url(../img/5febb82933ed2b00229b58d9.png);
+$background-image-topGames: url(../img/5febb92a7641a60022475dc4.png);
 $background-image-timeFlies: url();
 $background-image-newGames: url();
 $background-image-ourJorney: url();

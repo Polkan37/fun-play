@@ -3,7 +3,7 @@
 }
 
 .active {
-    background: $main-color;
+    background: $background-color;
     position  : absolute;
     top       : 0;
     right     : 0;
@@ -21,7 +21,8 @@
         position: relative;
         width          : 24px;
         height         : 18px;
-        margin        : 10px 8px;
+        margin        : 20px 8px 10px;
+        opacity: 1;
         display        : flex;
         flex-direction : column;
         justify-content: space-between;
@@ -119,4 +120,44 @@
             }
         }
     }
+}
+
+@media (min-width: $small-desktop-width) {
+    .nav {
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: row;
+
+        .nav__burger {
+            display: none;
+        }
+        .nav__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            position: unset;
+            top: unset;
+            left: unset;
+            transform: unset;
+
+            .nav__items {
+                display: flex;
+                flex-direction: row;
+            }
+            .socials__list{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .nav{
+        .nav__list{
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+
 }

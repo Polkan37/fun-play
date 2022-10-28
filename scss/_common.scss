@@ -6,7 +6,7 @@ body {
   color: $text-color;
   font-family: $main-font;
   font-size: $font-size-basic;
-  background: $main-color;
+  background: $background-color;
 }
 
 .wrapper {
@@ -31,7 +31,40 @@ body {
     max-width: 1200px;
     background-color: rgba($color: darksalmon, $alpha: .7);//delete after end
     margin: 0 auto;
+    text-align: center;
 }
 section {
-    padding: 100px 15px;
+    padding: 100px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: $marking-text-color;
+    color: $text-color;
+    text-transform: uppercase;
+    padding: 21px 48px;
+    border-radius: 20px;
+    font-family: $header-font;
+    font-size: $font-size-button;
+}
+.dots {
+    font-family: $header-font;
+    font-weight: bold;
+    font-size: $font-size-h2;
+    color: $marking-text-color-2;
+}
+.title {
+    font-family: $header-font;
+    font-size: $font-size-h2;
+    color: $text-color;
+}
+@media (min-width: $small-desktop-width) {
+    section {
+        padding: 170px 40px 190px;
+    }
+    .title {
+        font-size: $font-size-h2-desctop;
+    }
 }

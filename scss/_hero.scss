@@ -14,13 +14,29 @@
         line-height: 1.5;
     }
     &__button {
-        display: inline-block;
         background-color: $marking-text-color;
-        color: $text-color;
-        text-transform: uppercase;
-        padding: 21px 48px;
-        border-radius: 20px;
-        font-family: $header-font;
-        font-size: $font-size-button;
+    }
+}
+
+@media (min-width: $tab-width) {
+    .hero {
+        display: grid;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-columns: .63fr;
+        
+        &__title {
+            font-size: $font-size-h1-tab;
+        }
+    }
+}
+
+@media (min-width: $small-desktop-width) {
+    .hero {     
+        padding: 170px 40px 190px;   
+
+        &__title {
+            font-size: $font-size-h1-desktop;
+        }
     }
 }

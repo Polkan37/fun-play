@@ -1,0 +1,174 @@
+.top-games {
+    background: $background-image-topGames;
+    @include background-image;
+
+    &__subtitle{
+        margin-top: 25px;
+        font-size: $font-size-subtitle;
+        text-align: center;
+    }
+    &__slider{
+        position: relative;
+
+        .game-card {
+            margin-top: 45px;
+            background: $card-wrapper-color;
+    
+            &__content {
+                padding: 35px 43px;
+            }
+            &__category {
+                margin-top: 25px;
+                opacity: .75;
+                font-size: $font-size-text;
+            }
+            &__description {
+                margin-top: 20px;
+                line-height: 1.5;
+            }
+            &__image{
+                width: 100%;
+                padding-top: 65%;
+                background: url(../img/5fe965687641a60022436689_optimized_1000_c1000x850-0x0.png) 0 50% no-repeat;
+                background-size: 100%;
+            }
+            &__title {
+                font-size: $font-size-h3;
+                font-weight: bold;
+                color: $marking-text-color;
+            }
+            .info {
+                margin-top: 20px;
+    
+                &__item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-bottom: 16px;
+                }
+                &__title {
+                    margin-left: 10px;
+                    line-height: 1.4;
+                    font-size: $font-size-text;
+                    font-weight: bold;
+                }
+                &__data {
+                    opacity: .75;
+                    font-size: $font-size-text;
+                    font-weight: normal;
+                }
+            }
+            &__download {
+                &  p{
+                    font-size: $font-size-text;
+                    font-weight: bold;
+                    margin-bottom: 35px;
+                }
+                &-img{
+                    max-width: 120px;
+                    border-radius: 5px;
+                    border: 1px solid #a6a6a6;
+                    margin: 10px;
+                }
+            }
+        }
+        .slider {
+            &__arrow {
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: $text-color;
+                opacity: .85;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                    fill: #213263;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &__dots {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+
+                button {
+                    content: "";
+                    background: $text-color;
+                    opacity: .25;
+                    width: 10px;
+                    height: 10px;
+                    margin: 7.5px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                &-active {
+                    opacity: .75 !important;
+                }
+            }
+        }
+        .arrow-right {
+            right: -12px;
+        }
+        .arrow-left {
+            -webkit-transform: translateY(-50%) scaleX(-1);
+            transform: translateY(-50%) scaleX(-1);
+            left: -12px;
+        }
+    }
+}
+
+
+@media (min-width: $tab-width) {
+    .top-games {
+        &__slider{
+            .game-card {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                &__image{
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            .slider {
+                &__arrow {
+                    width: 50px;
+                    height: 50px;
+                    background: none;
+                    opacity: .75;
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                        fill: $text-color;
+                        opacity: inherit;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .arrow-right {
+            right: -40px;
+        }
+        .arrow-left {
+            left: -40px;
+        }
+    }
+}
