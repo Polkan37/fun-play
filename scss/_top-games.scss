@@ -2,11 +2,6 @@
     background: $background-image-topGames;
     @include background-image;
 
-    &__subtitle{
-        margin-top: 25px;
-        font-size: $font-size-subtitle;
-        text-align: center;
-    }
     &__slider{
         position: relative;
 

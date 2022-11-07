@@ -54,10 +54,21 @@ section {
     color: $marking-text-color-2;
     text-align: center;
 }
+.yellow-text {
+    color: $marking-text-color-2;
+}
+.white-text {
+    color: $text-color;
+}
 .title {
     font-family: $header-font;
     font-size: $font-size-h2;
     color: $text-color;
+    text-align: center;
+}
+.subtitle{
+    margin-top: 25px;
+    font-size: $font-size-subtitle;
     text-align: center;
 }
 @media (min-width: $small-desktop-width) {

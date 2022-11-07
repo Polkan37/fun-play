@@ -68,10 +68,24 @@ section {
   text-align: center;
 }
 
+.yellow-text {
+  color: #f9ba38;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
 .title {
   font-family: "Fredoka One", cursive;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -334,11 +348,6 @@ section {
   background-size: cover;
   background-position: center;
 }
-.top-games__subtitle {
-  margin-top: 25px;
-  font-size: 20px;
-  text-align: center;
-}
 .top-games__slider {
   position: relative;
 }
@@ -479,4 +488,10 @@ section {
   .top-games .arrow-left {
     left: -40px;
   }
+}
+.time-flies {
+  background: url(../img/5fea214d5c3a950021158fd9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
