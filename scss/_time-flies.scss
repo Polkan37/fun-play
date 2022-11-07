@@ -1,4 +1,45 @@
 .time-flies {
     background: $background-image-timeFlies;
     @include background-image;
+    text-align: center;
+
+    &__description {
+        line-height: 1.5;
+    }
+    &__button {
+        display: inline-block;
+        margin-top: 35px;
+        background-color: $marking-text-color-2;
+        padding: 17px 45px;
+    }
+}
+
+@media (min-width: $tab-width) {
+    .time-flies {
+
+        &__title {
+            font-size: $font-size-h1-tab;
+        }
+        &__content {
+            max-width: 50% !important;}
+    }
+
+}
+@media (min-width: $small-desktop-width) {
+    .time-flies {
+
+        &__title {
+            font-size: $font-size-h1-desktop;
+        }
+        &__content {
+            max-width: 60% !important;}
+    }
+
+}
+@media (min-width: $desktop-width) {
+    .time-flies {
+        &__content {
+            max-width: 64% !important;}
+    }
+
 }

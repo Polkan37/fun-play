@@ -54,6 +54,9 @@ section {
     color: $marking-text-color-2;
     text-align: center;
 }
+.center {
+    text-align: center;
+}
 .yellow-text {
     color: $marking-text-color-2;
 }
@@ -67,7 +70,7 @@ section {
     text-align: center;
 }
 .subtitle{
-    margin-top: 25px;
+    margin: 25px auto;
     font-size: $font-size-subtitle;
     text-align: center;
 }

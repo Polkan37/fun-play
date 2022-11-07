@@ -68,6 +68,10 @@ section {
   text-align: center;
 }
 
+.center {
+  text-align: center;
+}
+
 .yellow-text {
   color: #f9ba38;
 }
@@ -84,7 +88,7 @@ section {
 }
 
 .subtitle {
-  margin-top: 25px;
+  margin: 25px auto;
   font-size: 20px;
   text-align: center;
 }
@@ -286,6 +290,7 @@ section {
 }
 .about__text {
   padding-top: 45px;
+  line-height: 1.5;
   text-align: center;
 }
 .about__text p {
@@ -494,4 +499,36 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
+}
+.time-flies__description {
+  line-height: 1.5;
+}
+.time-flies__button {
+  display: inline-block;
+  margin-top: 35px;
+  background-color: #f9ba38;
+  padding: 17px 45px;
+}
+
+@media (min-width: 768px) {
+  .time-flies__title {
+    font-size: 66px;
+  }
+  .time-flies__content {
+    max-width: 50% !important;
+  }
+}
+@media (min-width: 992px) {
+  .time-flies__title {
+    font-size: 76px;
+  }
+  .time-flies__content {
+    max-width: 60% !important;
+  }
+}
+@media (min-width: 1186px) {
+  .time-flies__content {
+    max-width: 64% !important;
+  }
 }/*# sourceMappingURL=main.css.map */
