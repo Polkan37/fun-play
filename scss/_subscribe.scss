@@ -1,0 +1,15 @@
+.subscribe {
+    background: $background-image-subscribe;
+    @include background-image;
+
+    .dots {
+        color: $dots-color;
+    }
+    &__title {
+        font-size: $font-size-h1;
+    }
+}
+.the-end {
+    background: $background-image-subscribe-2;
+    @include background-image;
+}

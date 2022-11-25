@@ -1,0 +1,5 @@
+.footer {
+    background: $background-image-footer;
+    @include background-image;
+    text-align: center;
+}

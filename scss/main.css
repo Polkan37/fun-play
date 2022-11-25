@@ -28,11 +28,6 @@ body {
   flex: 1 1 auto;
 }
 
-.footer {
-  background: #77608d;
-  text-align: center;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
@@ -872,4 +867,31 @@ section {
   .popular .category {
     max-width: 383px;
   }
+}
+.subscribe {
+  background: url(../img/5fea345014162a0021342e7b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.subscribe .dots {
+  color: #FC4A62;
+}
+.subscribe__title {
+  font-size: 56px;
+}
+
+.the-end {
+  background: url(../img/5fea38946086530022140f33.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background: url(../img/5fea39661e68b90022cfbf89_optimized_1899.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
