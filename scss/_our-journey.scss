@@ -1,0 +1,35 @@
+.our-journey {
+    background: $background-image-ourJorney;
+    @include background-image;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+        .item {
+            margin-top: 45px;
+
+            &__dots {
+                color: $dots-color;
+
+            }
+        }
+    }
+}
+
+@media (min-width: $tab-width) {
+    .our-journey {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: $small-desktop-width) {
+    .our-journey {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

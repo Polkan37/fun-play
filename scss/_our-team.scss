@@ -1,0 +1,28 @@
+.our-team {
+    background: $background-image-ourTeam;
+    @include background-image;
+
+    .slider {
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            margin-top: 20px;
+            font-size: $font-size-h4;
+            line-height: 1.4;
+            font-weight: 800;
+        }
+
+        &__position {
+            margin-top: 20px;
+            opacity: .75;
+            font-weight: 400;
+            font-size: $font-size-basic;
+            line-height: 1.5;
+        }
+    }
+}

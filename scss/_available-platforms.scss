@@ -1,0 +1,39 @@
+.available-platforms {
+    background: $background-image-available;
+    @include background-image;
+
+    &__item {
+        background: rgba($color: $text-color, $alpha: .21);
+        width: 250px;
+        height: 183px;
+        border-radius: 16px;
+        margin: 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+
+    .slider__dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            padding: 5px;
+
+            button {
+                width: 10px;
+                height: 10px;
+                opacity: .25;
+                background: $text-color;
+                border-radius: 50%;
+            }
+
+            .active-dot {
+                opacity: .75 !important;
+            }
+        }
+    }
+}

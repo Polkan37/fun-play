@@ -1,42 +1,47 @@
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  color: $text-color;
-  font-family: $main-font;
-  font-size: $font-size-basic;
-  background: $background-color;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    font-family: $main-font;
+    font-size: $font-size-basic;
 }
 
 .wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 .header {
     background: $background-image-header;
     @include background-image;
     text-align: center;
 }
+
 .main {
     flex: 1 1 auto;
 }
+
 .footer {
-    background: #77608d;//delete after end
+    background: #77608d; //delete after end
     text-align: center;
 }
+
 .container {
     width: 100%;
     max-width: 1200px;
-    background-color: rgba($color: darksalmon, $alpha: .7);//delete after end
+    background-color: rgba($color: darksalmon, $alpha: .7); //delete after end
     margin: 0 auto;
 }
+
 section {
     padding: 100px 24px;
     display: flex;
     flex-direction: column;
 }
+
 .button {
     background-color: $marking-text-color;
     color: $text-color;
@@ -47,6 +52,7 @@ section {
     font-size: $font-size-button;
     width: fit-content;
 }
+
 .dots {
     font-family: $header-font;
     font-weight: bold;
@@ -54,30 +60,38 @@ section {
     color: $marking-text-color-2;
     text-align: center;
 }
+
 .center {
     text-align: center;
 }
+
 .yellow-text {
     color: $marking-text-color-2;
 }
+
 .white-text {
     color: $text-color;
 }
+
 .title {
     font-family: $header-font;
     font-size: $font-size-h2;
     color: $text-color;
     text-align: center;
 }
-.subtitle{
+
+.subtitle {
     margin: 25px auto;
     font-size: $font-size-subtitle;
+    line-height: 1.5;
     text-align: center;
 }
+
 @media (min-width: $small-desktop-width) {
     section {
         padding: 170px 40px 190px;
     }
+
     .title {
         font-size: $font-size-h2-desctop;
     }

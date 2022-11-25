@@ -1,0 +1,28 @@
+.new-games {
+    background: $background-image-newGames;
+    @include background-image;
+
+    &__slider {
+        position: relative;
+
+        .game-card {
+            margin: 45px auto 0;
+            background: none;
+            max-width: 276px;
+
+            &__image {
+                width: 100%;
+                background: none;
+                padding-top: 0;
+            }
+
+            &__title {
+                color: $text-color;
+            }
+
+            &__content {
+                padding: 0;
+            }
+        }
+    }
+}

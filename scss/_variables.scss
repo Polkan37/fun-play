@@ -12,27 +12,31 @@ $background-color: rgb(29, 71, 89);
 $card-wrapper-color: rgb(14, 49, 84);
 $card-button-color: #45a0e4;
 $text-color: #ffffff;
+$description-text-color: #bd977f;
 $marking-text-color: #19ca6d;
 $marking-text-color-hover: #14a95b;
 $marking-text-color-2: #f9ba38;
 $marking-text-color-2-hover: #f3a22e;
+$dots-color: #FC4A62;
 
 // fonts
-$main-font: 'Nunito', sans-serif;
-$header-font: 'Fredoka One', cursive;
+$main-font: 'Nunito',
+sans-serif;
+$header-font: 'Fredoka One',
+cursive;
 
 // font sizes
 $font-size-basic: 18px;
 $font-size-text: 16px;
-$font-size-h1-desktop: 76px; 
-$font-size-h1-tab: 66px; 
-$font-size-h1: 56px; 
-$font-size-h2: 40px; 
-$font-size-h2-desctop: 60px; 
-$font-size-h3: 28px; 
-$font-size-h4: 22px; 
-$font-size-subtitle: 20px; 
-$font-size-button: 15.4px; 
+$font-size-h1-desktop: 76px;
+$font-size-h1-tab: 66px;
+$font-size-h1: 56px;
+$font-size-h2: 40px;
+$font-size-h2-desctop: 60px;
+$font-size-h3: 28px;
+$font-size-h4: 22px;
+$font-size-subtitle: 20px;
+$font-size-button: 15.4px;
 
 
 $background-image-header: url(../img/5febb2b5a4f8480023a75f39.png);
@@ -53,4 +57,79 @@ $background-image-footer: url(../img/5fea39661e68b90022cfbf89_optimized_1899.png
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@mixin game-card {
+  .game-card {
+    margin-top: 45px;
+    background: $card-wrapper-color;
+
+    &__content {
+      padding: 35px 43px;
+    }
+
+    &__category {
+      margin-top: 25px;
+      opacity: .75;
+      font-size: $font-size-text;
+    }
+
+    &__description {
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    &__image {
+      width: 100%;
+      padding-top: 65%;
+      background: url(../img/5fe965687641a60022436689_optimized_1000_c1000x850-0x0.png) 0 50% no-repeat;
+      background-size: 100%;
+    }
+
+    &__title {
+      font-size: $font-size-h3;
+      font-weight: bold;
+      color: $marking-text-color;
+    }
+
+    .info {
+      margin-top: 20px;
+
+      &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+
+      &__title {
+        margin-left: 10px;
+        line-height: 1.4;
+        font-size: $font-size-text;
+        font-weight: bold;
+      }
+
+      &__data {
+        opacity: .75;
+        font-size: $font-size-text;
+        font-weight: normal;
+      }
+    }
+
+    &__download {
+      & p {
+        font-size: $font-size-text;
+        font-weight: bold;
+        margin-bottom: 35px;
+      }
+
+      &-img {
+        max-width: 120px;
+        border-radius: 5px;
+        border: 1px solid #a6a6a6;
+        margin: 10px;
+      }
+    }
+  }
 }
